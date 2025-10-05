@@ -51,7 +51,6 @@ public class Saga {
                 event.productQuantity()
         );
         kafkaTemplate.send(paymentsCommandsTopicName, processPaymentCommand);
-
     }
 
     @KafkaHandler
